@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/modules/heatmap.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/6/modules/exporting.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="width:850px;">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+
+
+
+            Highcharts.setOptions({"global": {}, "lang": {}});
+            var option = {"chart": {"renderTo": "container", "width": 850, "type": "column"}, "colors": {}, "credits": {"enabled": false}, "drilldown": {}, "exporting": {}, "labels": {}, "legend": {"enabled": false}, "loading": {}, "navigation": {}, "pane": {}, "plotOptions": {}, "series": {}, "subtitle": {"text": "\u6570\u636e\u6765\u6e90\uff1awww.douban.com"}, "title": {"text": "\u8c46\u74e3\u7535\u5f71\u8bc4\u5206top10"}, "tooltip": {"pointFormat": "Population in 2017: <b>{point.y:.1f} millions</b>"}, "xAxis": {"type": "category", "labels": {"rotation": -45, "style": {"fontSize": "12px", "fontFamily": "Verdana, sans-serif"}}}, "yAxis": {"min": 0, "title": {"text": "\u7535\u5f71\u8bc4\u5206"}}};
+
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+            var data = [{"data": [["\u8096\u7533\u514b\u7684\u6551\u8d4e", 9.6], ["\u9738\u738b\u522b\u59ec", 9.6], ["\u63a7\u65b9\u8bc1\u4eba", 9.6], ["\u7f8e\u4e3d\u4eba\u751f", 9.5], ["\u8f9b\u5fb7\u52d2\u7684\u540d\u5355", 9.5], ["\u8fd9\u4e2a\u6740\u624b\u4e0d\u592a\u51b7", 9.4], ["\u963f\u7518\u6b63\u4f20", 9.4], ["\u5341\u4e8c\u6012\u6c49", 9.4], ["\u6cf0\u5766\u5c3c\u514b\u53f7", 9.3], ["\u5343\u4e0e\u5343\u5bfb", 9.3]], "type": "column", "dataLabels": {"enabled": true, "rotation": -90, "color": "#FFFFFF", "align": "right", "format": "{point.y}", "y": 10, "style": {"fontSize": "13px", "fontFamily": "Verdana, sans-serif"}}, "name": "Series 1"}];
+            var dataLen = data.length;
+            for (var ix = 0; ix < dataLen; ix++) {
+                chart.addSeries(data[ix]);
+            }
+ 
+
+
+
+
+
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>
